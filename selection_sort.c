@@ -24,15 +24,16 @@ int main(){
         }
         if(min != i){
             //swap
-            int s = a[min];
-            a[min] = a[i];
-            a[i] = s; 
+            int s = a[i];
+            a[i] = a[min];
+            a[min] = s; 
         }
     }
 
     for(int p = 0; p < n ; p++){
         printf("%d ", a[p]);
     }
+    printf("\n");
     
     return 0;
 }
